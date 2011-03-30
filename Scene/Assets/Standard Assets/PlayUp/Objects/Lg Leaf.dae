@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<authoring_tool>PlayUp</authoring_tool>							
+		</contributor>
+		<created>2011-03-21T19:58:12Z</created> 										
+		<modified>2011-03-21T19:58:12Z</modified>										
+		<revision>1.4.1</revision>
+		<unit meter="1.0" name="meter"></unit>
+	</asset>
+	<library_images>
+		<image id="playup_nomaterial_tga_img" format="bitmap" height="32" width="32" depth="32">
+			<init_from>file:///C:/Users/Dave/Documents/Scene/Assets/Standard Assets/PlayUp/Textures/playup_nomaterial.tga</init_from>
+		</image>
+	</library_images>
+	<library_effects>
+		<effect id="Lg Leaf-1-playup_nomaterial_fx">								
+			<profile_COMMON>
+				<newparam sid="playup_nomaterial_tga_surface">
+					<surface type="2D">
+						<init_from>playup_nomaterial_tga_img</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="playup_nomaterial_tga_sampler">
+					<sampler2D>
+						<source>playup_nomaterial_tga_surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="default">
+					<phong>
+						<emission>
+							<color sid="emission">0.000000 0.000000 0.000000 1.000000</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0.000000 0.000000 0.000000 1.000000</color>
+						</ambient>
+						<diffuse>
+							<color sid="diffuse">0.999999993 0.999999993 0.999999993 1.000000</color>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.000000 0.000000 0.000000 1.000000</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">0.000000</float>
+						</shininess>
+						<reflective>
+							<color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+						</reflective>
+						<reflectivity>
+							<float sid="reflectivity">0.000000</float>
+						</reflectivity>
+						<transparent opaque="RGB_ZERO">
+							<color sid="transparent">0.000000 0.000000 0.000000 0.000000</color>
+						</transparent>
+						<transparency>
+							<float sid="transparency">0.000000</float>
+						</transparency>
+						<index_of_refraction>
+							<float sid="index_of_refraction">0.000000</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+
+	</library_effects>
+	<library_materials>
+		<material id="Lg Leaf-1-playup_nomaterial">									
+			<instance_effect url="#Lg Leaf-1-playup_nomaterial_fx"></instance_effect>	
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="geometries_0">												
+			<mesh>
+				<source id="geometries_0-Pos">											
+					<float_array id="geometries_0-Pos-array" count="102">				
+						0.418166 1.475367 8.245921
+						1.641500 1.543067 8.198047
+						0.398536 1.543067 8.198047
+						0.593104 0.972343 8.601631
+						0.793921 0.480066 8.949742
+						1.020018 0.000000 9.289218
+						1.246115 0.480066 8.949742
+						1.446931 0.972343 8.601631
+						1.621870 1.475367 8.245921
+						0.053426 2.829226 7.027881
+						1.995884 2.971561 6.898382
+						0.044152 2.971561 6.898382
+						0.147925 2.375257 7.440908
+						0.269626 1.926624 7.849081
+						1.770410 1.926624 7.849081
+						1.892111 2.375257 7.440908
+						1.986610 2.829226 7.027881
+						0.541229 6.421084 1.853264
+						1.498807 6.421084 1.853264
+						1.020018 7.185093 0.000000
+						0.522786 6.387314 1.935182
+						1.517250 6.387314 1.935182
+						0.326168 5.942046 2.760139
+						1.713867 5.942046 2.760139
+						0.164034 5.448799 3.673987
+						1.876002 5.448799 3.673987
+						1.884464 5.410027 3.745821
+						0.155571 5.410027 3.745821
+						0.055403 4.860280 4.544622
+						1.984633 4.860280 4.544622
+						2.038877 4.266332 5.407647
+						0.001159 4.266332 5.407647
+						0.000000 3.553959 6.227838
+						2.040036 3.553959 6.227838
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Pos-array" count="34" stride="3"> 	
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geometries_0-Normal">									
+					<float_array id="geometries_0-Normal-array" count="48">			
+						-0.000000 0.577371 0.816482
+						-0.000000 0.633551 0.773701
+						-0.000000 0.633551 0.773701
+						-0.000000 0.672966 0.739674
+						0.000000 0.716486 0.697601
+						0.000000 0.716486 0.697601
+						0.000000 0.924520 0.381134
+						0.000000 0.900536 0.434782
+						0.000000 0.900536 0.434782
+						0.000000 0.879998 0.474976
+						0.000000 0.851268 0.524731
+						0.000000 0.851268 0.524731
+						0.000000 0.823767 0.566929
+						0.000000 0.790036 0.613061
+						0.000000 0.790036 0.613061
+						0.000000 0.754987 0.655740
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Normal-array" count="16" stride="3">	
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geometries_0-Texture_Projection">
+					<float_array id="geometries_0-Texture_Projection-array" count="88">
+						-0.418166 3.556344
+						-1.641500 3.473426
+						-0.398536 3.473426
+						-0.593104 4.172431
+						-0.793921 4.775355
+						-1.020018 5.363324
+						-1.246115 4.775355
+						-1.446931 4.172431
+						-1.621870 3.556344
+						-0.053426 2.636820
+						-1.995884 2.444391
+						-0.044152 2.444391
+						-0.147925 3.250562
+						-0.269626 3.857091
+						-0.398536 4.375639
+						-1.641500 4.375639
+						-1.770410 3.857091
+						-1.892111 3.250562
+						-1.986610 2.636820
+						-0.541229 -0.733911
+						-1.498807 -0.733911
+						-1.020018 -2.738480
+						-0.522786 -0.645305
+						-1.517250 -0.645305
+						-0.326168 -0.393414
+						-1.517250 -1.330866
+						-0.522786 -1.330866
+						-1.713867 -0.393414
+						-0.164034 0.645052
+						-1.876002 0.645052
+						-1.884464 0.726682
+						-0.155571 0.726682
+						-0.055403 0.988273
+						-1.884464 0.018580
+						-0.155571 0.018580
+						-1.984633 0.988273
+						-2.038877 2.035930
+						-0.001159 2.035930
+						0.000000 2.371462
+						-2.038877 1.285096
+						-0.001159 1.285096
+						-2.040036 2.371462
+						-1.995884 3.259615
+						-0.044152 3.259615
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Texture_Projection-array" count="44" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="geometries_0-Vtx">										
+					<input semantic="POSITION" source="#geometries_0-Pos"/>				
+				</vertices>
+				<triangles count="32" material="Lg Leaf-1-playup_nomaterial">		
+					<input semantic="VERTEX" source="#geometries_0-Vtx" offset="0"/>
+					<input semantic="NORMAL" source="#geometries_0-Normal" offset="1"/>	
+					<input semantic="TEXCOORD" source="#geometries_0-Texture_Projection" offset="2"/>
+					<p>
+						0	0	0
+						1	1	1
+						2	2	2
+						1	1	1
+						0	0	0
+						3	0	3
+						1	1	1
+						3	0	3
+						4	0	4
+						1	1	1
+						4	0	4
+						5	0	5
+						1	1	1
+						5	0	5
+						6	0	6
+						1	1	1
+						6	0	6
+						7	0	7
+						1	1	1
+						7	0	7
+						8	0	8
+						9	3	9
+						10	4	10
+						11	5	11
+						10	4	10
+						9	3	9
+						12	3	12
+						10	4	10
+						12	3	12
+						13	3	13
+						10	4	10
+						13	3	13
+						2	2	14
+						10	4	10
+						2	2	14
+						1	1	15
+						10	4	10
+						1	1	15
+						14	3	16
+						10	4	10
+						14	3	16
+						15	3	17
+						10	4	10
+						15	3	17
+						16	3	18
+						17	6	19
+						18	6	20
+						19	6	21
+						18	6	20
+						17	6	19
+						20	7	22
+						18	6	20
+						20	7	22
+						21	8	23
+						22	9	24
+						21	8	25
+						20	7	26
+						21	8	25
+						22	9	24
+						23	9	27
+						23	9	27
+						22	9	24
+						24	9	28
+						23	9	27
+						24	9	28
+						25	9	29
+						25	9	29
+						24	9	28
+						26	10	30
+						26	10	30
+						24	9	28
+						27	11	31
+						28	12	32
+						26	10	33
+						27	11	34
+						26	10	33
+						28	12	32
+						29	12	35
+						29	12	35
+						28	12	32
+						30	13	36
+						30	13	36
+						28	12	32
+						31	14	37
+						32	15	38
+						30	13	39
+						31	14	40
+						30	13	39
+						32	15	38
+						33	15	41
+						33	15	41
+						32	15	38
+						10	4	42
+						10	4	42
+						32	15	38
+						11	5	43
+					</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_visual_scenes>
+		<visual_scene id="visual_scenes_0" name="untitled">
+			<node id="UnityExportNode_Lg Leaf">					
+				<translate sid="translation">0.000000 0.000000 0.000000</translate>
+				<rotate sid="rotation_z">0.000000 0.000000 1.000000 0.000000</rotate>
+				<rotate sid="rotation_y">0.000000 1.000000 0.000000 0.000000</rotate>
+				<rotate sid="rotation_x">1.000000 0.000000 0.000000 0.000000</rotate>
+				<scale sid="scale">1.000000 1.000000 1.000000</scale>
+							<node id="mesh0%root%0%">													
+								<translate sid="translation">0.000000 0.000000 0.000000</translate>
+								<rotate>1.000000 0.000000 0.000000 0.000000</rotate>
+								<scale sid="scale">1.0 1.0 1.0</scale>
+								<instance_geometry url="#geometries_0">
+									<bind_material>
+										<technique_common>
+											<instance_material symbol="Lg Leaf-1-playup_nomaterial" target="#Lg Leaf-1-playup_nomaterial"> 
+
+
+
+
+												<bind semantic="diffuse_TEXCOORD" target="geometries_0-"></bind>
+											</instance_material>	
+										</technique_common>
+									</bind_material>
+								</instance_geometry>
+				</node>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#visual_scenes_0"/>
+	</scene>
+</COLLADA>

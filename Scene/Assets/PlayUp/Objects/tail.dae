@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<authoring_tool>PlayUp</authoring_tool>							
+		</contributor>
+		<created>2011-03-21T16:49:13Z</created> 										
+		<modified>2011-03-21T16:49:13Z</modified>										
+		<revision>1.4.1</revision>
+		<unit meter="1.0" name="meter"></unit>
+	</asset>
+	<library_images>
+		<image id="SUDCBurnt Sienna_tga_img" format="bitmap" height="32" width="32" depth="32">
+			<init_from>file:///C:/Users/Dave/Documents/Scene/Assets/PlayUp/Textures/playup_nomaterial.tga</init_from>
+		</image>
+		<image id="SUDCLight Oliv_tga_img" format="bitmap" height="32" width="32" depth="32">
+			<init_from>file:///C:/Users/Dave/Documents/Scene/Assets/PlayUp/Textures/playup_nomaterial.tga</init_from>
+		</image>
+	</library_images>
+	<library_effects>
+		<effect id="tail-1-SUDCBurnt Sienna_fx">								
+			<profile_COMMON>
+				<newparam sid="SUDCBurnt Sienna_tga_surface">
+					<surface type="2D">
+						<init_from>SUDCBurnt Sienna_tga_img</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="SUDCBurnt Sienna_tga_sampler">
+					<sampler2D>
+						<source>SUDCBurnt Sienna_tga_surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="default">
+					<phong>
+						<emission>
+							<color sid="emission">0.000000 0.000000 0.000000 1.000000</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0.000000 0.000000 0.000000 1.000000</color>
+						</ambient>
+						<diffuse>
+							<color sid="diffuse">0.5411764668 0.313725488 0.2980392136 1.000000</color>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.000000 0.000000 0.000000 1.000000</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">0.000000</float>
+						</shininess>
+						<reflective>
+							<color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+						</reflective>
+						<reflectivity>
+							<float sid="reflectivity">0.000000</float>
+						</reflectivity>
+						<transparent opaque="RGB_ZERO">
+							<color sid="transparent">0.000000 0.000000 0.000000 0.000000</color>
+						</transparent>
+						<transparency>
+							<float sid="transparency">0.000000</float>
+						</transparency>
+						<index_of_refraction>
+							<float sid="index_of_refraction">0.000000</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="tail-2-SUDCLight Oliv_fx">								
+			<profile_COMMON>
+				<newparam sid="SUDCLight Oliv_tga_surface">
+					<surface type="2D">
+						<init_from>SUDCLight Oliv_tga_img</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="SUDCLight Oliv_tga_sampler">
+					<sampler2D>
+						<source>SUDCLight Oliv_tga_surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="default">
+					<phong>
+						<emission>
+							<color sid="emission">0.000000 0.000000 0.000000 1.000000</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0.000000 0.000000 0.000000 1.000000</color>
+						</ambient>
+						<diffuse>
+							<color sid="diffuse">0.6627450934 0.7294117596 0.39215686 1.000000</color>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.000000 0.000000 0.000000 1.000000</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">0.000000</float>
+						</shininess>
+						<reflective>
+							<color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+						</reflective>
+						<reflectivity>
+							<float sid="reflectivity">0.000000</float>
+						</reflectivity>
+						<transparent opaque="RGB_ZERO">
+							<color sid="transparent">0.000000 0.000000 0.000000 0.000000</color>
+						</transparent>
+						<transparency>
+							<float sid="transparency">0.000000</float>
+						</transparency>
+						<index_of_refraction>
+							<float sid="index_of_refraction">0.000000</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+
+	</library_effects>
+	<library_materials>
+		<material id="tail-1-SUDCBurnt Sienna">									
+			<instance_effect url="#tail-1-SUDCBurnt Sienna_fx"></instance_effect>	
+		</material>
+		<material id="tail-2-SUDCLight Oliv">									
+			<instance_effect url="#tail-2-SUDCLight Oliv_fx"></instance_effect>	
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="geometries_0">												
+			<mesh>
+				<source id="geometries_0-Pos">											
+					<float_array id="geometries_0-Pos-array" count="45">				
+						0.360844 1.250000 66.000000
+						0.360844 0.000000 66.000000
+						0.000000 0.625000 66.000000
+						0.505181 0.750000 66.000000
+						1.082532 1.250000 66.000000
+						0.938194 0.750000 66.000000
+						0.721688 0.375000 66.000000
+						1.082532 0.000000 66.000000
+						1.443376 0.625000 66.000000
+						0.000000 0.625000 72.000000
+						0.360844 0.000000 72.000000
+						1.082532 0.000000 72.000000
+						1.443376 0.625000 72.000000
+						0.360844 1.250000 72.000000
+						1.082532 1.250000 72.000000
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Pos-array" count="15" stride="3"> 	
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geometries_0-Normal">									
+					<float_array id="geometries_0-Normal-array" count="39">			
+						-0.396203 0.686244 -0.609994
+						-0.396203 -0.686244 -0.609994
+						-0.792406 0.000000 -0.609994
+						0.000000 0.000000 -1.000000
+						0.396203 0.686244 -0.609994
+						0.396203 -0.686244 -0.609994
+						0.792406 0.000000 -0.609994
+						-0.792406 0.000000 0.609994
+						-0.396203 -0.686244 0.609994
+						0.396203 -0.686244 0.609994
+						0.792406 0.000000 0.609994
+						-0.396203 0.686244 0.609994
+						0.396203 0.686244 0.609994
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Normal-array" count="13" stride="3">	
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geometries_0-Texture_Projection">
+					<float_array id="geometries_0-Texture_Projection-array" count="72">
+						-0.360844 1.250000
+						-0.360844 0.000000
+						0.000000 0.625000
+						-0.505181 0.750000
+						-1.082532 1.250000
+						-0.938194 0.750000
+						-0.721688 0.375000
+						-1.082532 0.000000
+						-1.443376 0.625000
+						-0.541266 72.000000
+						0.180422 66.000000
+						0.180422 72.000000
+						-0.541266 66.000000
+						1.262954 66.000000
+						0.541266 72.000000
+						0.541266 66.000000
+						1.262954 72.000000
+						-1.262954 72.000000
+						-1.262954 66.000000
+						0.541266 66.000000
+						-0.180422 72.000000
+						-0.180422 66.000000
+						0.541266 72.000000
+						0.360844 0.000000
+						0.360844 1.250000
+						1.082532 0.000000
+						1.082532 1.250000
+						1.443376 0.625000
+						1.082532 72.000000
+						0.360844 66.000000
+						1.082532 66.000000
+						0.360844 72.000000
+						-0.360844 72.000000
+						-1.082532 66.000000
+						-0.360844 66.000000
+						-1.082532 72.000000
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Texture_Projection-array" count="36" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="geometries_0-Vtx">										
+					<input semantic="POSITION" source="#geometries_0-Pos"/>				
+				</vertices>
+				<triangles count="25" material="tail-1-SUDCBurnt Sienna">		
+					<input semantic="VERTEX" source="#geometries_0-Vtx" offset="0"/>
+					<input semantic="NORMAL" source="#geometries_0-Normal" offset="1"/>	
+					<input semantic="TEXCOORD" source="#geometries_0-Texture_Projection" offset="2"/>
+					<p>
+						0	0	0
+						1	1	1
+						2	2	2
+						1	1	1
+						0	0	0
+						3	3	3
+						3	3	3
+						0	0	0
+						4	4	4
+						3	3	3
+						4	4	4
+						5	3	5
+						1	1	1
+						6	3	6
+						7	5	7
+						6	3	6
+						1	1	1
+						3	3	3
+						7	5	7
+						6	3	6
+						5	3	5
+						7	5	7
+						5	3	5
+						4	4	4
+						7	5	7
+						4	4	4
+						8	6	8
+						9	7	9
+						1	1	10
+						10	8	11
+						1	1	10
+						9	7	9
+						2	2	12
+						8	6	13
+						11	9	14
+						7	5	15
+						11	9	14
+						8	6	13
+						12	10	16
+						13	11	17
+						2	2	12
+						9	7	9
+						2	2	12
+						13	11	17
+						0	0	18
+						4	4	19
+						12	10	20
+						8	6	21
+						12	10	20
+						4	4	19
+						14	12	22
+						10	8	23
+						13	11	24
+						9	7	2
+						13	11	24
+						10	8	23
+						11	9	25
+						13	11	24
+						11	9	25
+						14	12	26
+						14	12	26
+						11	9	25
+						12	10	27
+						11	9	28
+						1	1	29
+						7	5	30
+						1	1	29
+						11	9	28
+						10	8	31
+						13	11	32
+						4	4	33
+						0	0	34
+						4	4	33
+						13	11	32
+						14	12	35
+					</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="geometries_1">												
+			<mesh>
+				<source id="geometries_1-Pos">											
+					<float_array id="geometries_1-Pos-array" count="18">				
+						0.505181 0.750000 66.000000
+						0.721688 0.375000 0.000000
+						0.721688 0.375000 66.000000
+						0.505181 0.750000 0.000000
+						0.938194 0.750000 0.000000
+						0.938194 0.750000 66.000000
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_1-Pos-array" count="6" stride="3"> 	
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geometries_1-Normal">									
+					<float_array id="geometries_1-Normal-array" count="9">			
+						-0.866025 -0.500000 0.000000
+						0.866025 -0.500000 0.000000
+						0.000000 1.000000 0.000000
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_1-Normal-array" count="3" stride="3">	
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geometries_1-Texture_Projection">
+					<float_array id="geometries_1-Texture_Projection-array" count="24">
+						-0.396928 66.000000
+						0.036084 0.000000
+						0.036084 66.000000
+						-0.396928 0.000000
+						1.118616 0.000000
+						0.685603 66.000000
+						0.685603 0.000000
+						1.118616 66.000000
+						-0.505181 66.000000
+						-0.938194 0.000000
+						-0.505181 0.000000
+						-0.938194 66.000000
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_1-Texture_Projection-array" count="12" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="geometries_1-Vtx">										
+					<input semantic="POSITION" source="#geometries_1-Pos"/>				
+				</vertices>
+				<triangles count="6" material="tail-2-SUDCLight Oliv">		
+					<input semantic="VERTEX" source="#geometries_1-Vtx" offset="0"/>
+					<input semantic="NORMAL" source="#geometries_1-Normal" offset="1"/>	
+					<input semantic="TEXCOORD" source="#geometries_1-Texture_Projection" offset="2"/>
+					<p>
+						0	0	0
+						1	0	1
+						2	0	2
+						1	0	1
+						0	0	0
+						3	0	3
+						4	1	4
+						2	1	5
+						1	1	6
+						2	1	5
+						4	1	4
+						5	1	7
+						0	2	8
+						4	2	9
+						3	2	10
+						4	2	9
+						0	2	8
+						5	2	11
+					</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_visual_scenes>
+		<visual_scene id="visual_scenes_0" name="untitled">
+			<node id="UnityExportNode_tail">					
+				<translate sid="translation">0.000000 0.000000 0.000000</translate>
+				<rotate sid="rotation_z">0.000000 0.000000 1.000000 0.000000</rotate>
+				<rotate sid="rotation_y">0.000000 1.000000 0.000000 0.000000</rotate>
+				<rotate sid="rotation_x">1.000000 0.000000 0.000000 0.000000</rotate>
+				<scale sid="scale">1.000000 1.000000 1.000000</scale>
+							<node id="mesh0%root%0%">													
+								<translate sid="translation">0.000000 0.000000 0.000000</translate>
+								<rotate>1.000000 0.000000 0.000000 0.000000</rotate>
+								<scale sid="scale">1.0 1.0 1.0</scale>
+								<instance_geometry url="#geometries_0">
+									<bind_material>
+										<technique_common>
+											<instance_material symbol="tail-1-SUDCBurnt Sienna" target="#tail-1-SUDCBurnt Sienna"> 
+
+
+
+
+												<bind semantic="diffuse_TEXCOORD" target="geometries_0-"></bind>
+											</instance_material>	
+										</technique_common>
+									</bind_material>
+								</instance_geometry>
+							<node id="mesh0%root%1%">													
+								<translate sid="translation">0.000000 0.000000 0.000000</translate>
+								<rotate>1.000000 0.000000 0.000000 0.000000</rotate>
+								<scale sid="scale">1.0 1.0 1.0</scale>
+								<instance_geometry url="#geometries_1">
+									<bind_material>
+										<technique_common>
+											<instance_material symbol="tail-2-SUDCLight Oliv" target="#tail-2-SUDCLight Oliv"> 
+
+
+
+
+												<bind semantic="diffuse_TEXCOORD" target="geometries_1-"></bind>
+											</instance_material>	
+										</technique_common>
+									</bind_material>
+								</instance_geometry>
+				</node>
+				</node>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#visual_scenes_0"/>
+	</scene>
+</COLLADA>

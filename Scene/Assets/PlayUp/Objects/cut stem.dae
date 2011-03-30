@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<authoring_tool>PlayUp</authoring_tool>							
+		</contributor>
+		<created>2011-03-21T20:21:59Z</created> 										
+		<modified>2011-03-21T20:21:59Z</modified>										
+		<revision>1.4.1</revision>
+		<unit meter="1.0" name="meter"></unit>
+	</asset>
+	<library_images>
+		<image id="SUDCDarkOrange_tga_img" format="bitmap" height="32" width="32" depth="32">
+			<init_from>file:///C:/Users/Dave/Documents/Scene/Assets/PlayUp/Textures/playup_nomaterial.tga</init_from>
+		</image>
+	</library_images>
+	<library_effects>
+		<effect id="cut stem-1-SUDCDarkOrange_fx">								
+			<profile_COMMON>
+				<newparam sid="SUDCDarkOrange_tga_surface">
+					<surface type="2D">
+						<init_from>SUDCDarkOrange_tga_img</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="SUDCDarkOrange_tga_sampler">
+					<sampler2D>
+						<source>SUDCDarkOrange_tga_surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="default">
+					<phong>
+						<emission>
+							<color sid="emission">0.000000 0.000000 0.000000 1.000000</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0.000000 0.000000 0.000000 1.000000</color>
+						</ambient>
+						<diffuse>
+							<color sid="diffuse">0.7882352886 0.666666662 0.2823529392 1.000000</color>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.000000 0.000000 0.000000 1.000000</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">0.000000</float>
+						</shininess>
+						<reflective>
+							<color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+						</reflective>
+						<reflectivity>
+							<float sid="reflectivity">0.000000</float>
+						</reflectivity>
+						<transparent opaque="RGB_ZERO">
+							<color sid="transparent">0.000000 0.000000 0.000000 0.000000</color>
+						</transparent>
+						<transparency>
+							<float sid="transparency">0.000000</float>
+						</transparency>
+						<index_of_refraction>
+							<float sid="index_of_refraction">0.000000</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+
+	</library_effects>
+	<library_materials>
+		<material id="cut stem-1-SUDCDarkOrange">									
+			<instance_effect url="#cut stem-1-SUDCDarkOrange_fx"></instance_effect>	
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="geometries_0">												
+			<mesh>
+				<source id="geometries_0-Pos">											
+					<float_array id="geometries_0-Pos-array" count="24">				
+						0.408739 0.136431 0.008889
+						0.149703 0.385095 4.997984
+						0.371939 0.000171 0.017779
+						0.186504 0.521355 4.989095
+						0.013298 0.421355 4.989095
+						0.235534 0.036431 0.008889
+						0.272335 0.172691 -0.000000
+						0.050099 0.557614 4.980205
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Pos-array" count="8" stride="3"> 	
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geometries_0-Normal">									
+					<float_array id="geometries_0-Normal-array" count="24">			
+						0.866025 0.500000 -0.000000
+						0.498021 -0.862597 0.088894
+						0.498021 -0.862597 0.088894
+						0.866025 0.500000 -0.000000
+						-0.866025 -0.500000 0.000000
+						-0.866025 -0.500000 0.000000
+						-0.498021 0.862597 -0.088894
+						-0.498021 0.862597 -0.088894
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Normal-array" count="8" stride="3">	
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geometries_0-Texture_Projection">
+					<float_array id="geometries_0-Texture_Projection-array" count="32">
+						0.236858 -0.013755
+						0.410629 4.985225
+						0.095718 -0.004848
+						0.551770 4.976318
+						0.359029 0.023850
+						-0.097023 5.005016
+						0.217888 0.014943
+						0.044117 5.013923
+						-0.410629 4.985225
+						-0.236858 -0.013755
+						-0.095718 -0.004848
+						-0.551770 4.976318
+						0.097023 5.005016
+						-0.359029 0.023850
+						-0.217888 0.014943
+						-0.044117 5.013923
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Texture_Projection-array" count="16" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="geometries_0-Vtx">										
+					<input semantic="POSITION" source="#geometries_0-Pos"/>				
+				</vertices>
+				<triangles count="8" material="cut stem-1-SUDCDarkOrange">		
+					<input semantic="VERTEX" source="#geometries_0-Vtx" offset="0"/>
+					<input semantic="NORMAL" source="#geometries_0-Normal" offset="1"/>	
+					<input semantic="TEXCOORD" source="#geometries_0-Texture_Projection" offset="2"/>
+					<p>
+						0	0	0
+						1	1	1
+						2	2	2
+						1	1	1
+						0	0	0
+						3	3	3
+						2	2	4
+						4	4	5
+						5	5	6
+						4	4	5
+						2	2	4
+						1	1	7
+						4	4	8
+						6	6	9
+						5	5	10
+						6	6	9
+						4	4	8
+						7	7	11
+						7	7	12
+						0	0	13
+						6	6	14
+						0	0	13
+						7	7	12
+						3	3	15
+					</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_visual_scenes>
+		<visual_scene id="visual_scenes_0" name="untitled">
+			<node id="UnityExportNode_cut stem">					
+				<translate sid="translation">0.000000 0.000000 0.000000</translate>
+				<rotate sid="rotation_z">0.000000 0.000000 1.000000 0.000000</rotate>
+				<rotate sid="rotation_y">0.000000 1.000000 0.000000 0.000000</rotate>
+				<rotate sid="rotation_x">1.000000 0.000000 0.000000 0.000000</rotate>
+				<scale sid="scale">1.000000 1.000000 1.000000</scale>
+							<node id="mesh0%root%0%">													
+								<translate sid="translation">0.000000 0.000000 0.000000</translate>
+								<rotate>1.000000 0.000000 0.000000 0.000000</rotate>
+								<scale sid="scale">1.0 1.0 1.0</scale>
+								<instance_geometry url="#geometries_0">
+									<bind_material>
+										<technique_common>
+											<instance_material symbol="cut stem-1-SUDCDarkOrange" target="#cut stem-1-SUDCDarkOrange"> 
+
+
+
+
+												<bind semantic="diffuse_TEXCOORD" target="geometries_0-"></bind>
+											</instance_material>	
+										</technique_common>
+									</bind_material>
+								</instance_geometry>
+				</node>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#visual_scenes_0"/>
+	</scene>
+</COLLADA>

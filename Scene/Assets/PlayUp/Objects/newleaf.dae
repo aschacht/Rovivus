@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<authoring_tool>PlayUp</authoring_tool>							
+		</contributor>
+		<created>2011-03-21T20:21:59Z</created> 										
+		<modified>2011-03-21T20:21:59Z</modified>										
+		<revision>1.4.1</revision>
+		<unit meter="1.0" name="meter"></unit>
+	</asset>
+	<library_images>
+		<image id="SUDCDarkGreen_tga_img" format="bitmap" height="32" width="32" depth="32">
+			<init_from>file:///C:/Users/Dave/Documents/Scene/Assets/PlayUp/Textures/playup_nomaterial.tga</init_from>
+		</image>
+	</library_images>
+	<library_effects>
+		<effect id="newleaf-1-SUDCDarkGreen_fx">								
+			<profile_COMMON>
+				<newparam sid="SUDCDarkGreen_tga_surface">
+					<surface type="2D">
+						<init_from>SUDCDarkGreen_tga_img</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="SUDCDarkGreen_tga_sampler">
+					<sampler2D>
+						<source>SUDCDarkGreen_tga_surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="default">
+					<phong>
+						<emission>
+							<color sid="emission">0.000000 0.000000 0.000000 1.000000</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0.000000 0.000000 0.000000 1.000000</color>
+						</ambient>
+						<diffuse>
+							<color sid="diffuse">0.0 0.4941176436 0.0039215686 1.000000</color>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.000000 0.000000 0.000000 1.000000</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">0.000000</float>
+						</shininess>
+						<reflective>
+							<color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+						</reflective>
+						<reflectivity>
+							<float sid="reflectivity">0.000000</float>
+						</reflectivity>
+						<transparent opaque="RGB_ZERO">
+							<color sid="transparent">0.000000 0.000000 0.000000 0.000000</color>
+						</transparent>
+						<transparency>
+							<float sid="transparency">0.000000</float>
+						</transparency>
+						<index_of_refraction>
+							<float sid="index_of_refraction">0.000000</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+
+	</library_effects>
+	<library_materials>
+		<material id="newleaf-1-SUDCDarkGreen">									
+			<instance_effect url="#newleaf-1-SUDCDarkGreen_fx"></instance_effect>	
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="geometries_0">												
+			<mesh>
+				<source id="geometries_0-Pos">											
+					<float_array id="geometries_0-Pos-array" count="102">				
+						8.574590 9.289756 3.449897
+						0.477611 11.856520 2.381456
+						8.574590 8.855296 3.725577
+						9.429624 7.751020 3.379544
+						8.846200 7.344879 3.154430
+						7.031678 0.207757 0.118009
+						8.886922 8.264641 3.524689
+						11.166198 -0.101771 0.445453
+						9.975859 7.257375 3.242729
+						4.722868 1.178341 0.252445
+						0.065082 7.518402 2.266534
+						7.897613 8.337100 3.445700
+						0.823934 5.269826 1.454891
+						10.234152 8.498193 3.764394
+						10.366564 7.414512 3.347805
+						13.543383 0.517999 0.951009
+						15.643163 1.698626 1.649407
+						10.695947 7.663014 3.482537
+						17.322439 3.359651 2.493052
+						10.434773 9.198979 3.487684
+						10.257076 10.103783 3.111050
+						18.778483 10.967855 2.751372
+						11.125896 8.935465 3.597374
+						16.891038 14.389321 1.327152
+						10.610389 9.871044 3.207930
+						15.057032 15.968830 0.669667
+						19.083676 8.669531 3.708072
+						8.478138 9.972375 3.165750
+						2.743425 15.076310 1.041187
+						9.309626 9.472357 3.373887
+						4.746791 16.469481 0.461266
+						9.850306 10.243604 3.052848
+						12.842709 17.056292 0.217000
+						10.398970 17.577600 0.000000
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Pos-array" count="34" stride="3"> 	
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geometries_0-Normal">									
+					<float_array id="geometries_0-Normal-array" count="48">			
+						0.037758 0.462809 0.885653
+						0.058326 0.534865 0.842922
+						-0.007900 0.111801 0.993699
+						-0.100743 -0.367696 0.924473
+						-0.049490 0.026659 0.998419
+						-0.020840 0.377197 0.925898
+						-0.002275 0.381717 0.924276
+						-0.000000 0.384295 0.923210
+						-0.001443 0.370784 0.928718
+						0.000000 0.384295 0.923210
+						-0.001002 0.358598 0.933491
+						0.000000 0.384295 0.923210
+						0.003873 0.379034 0.925375
+						0.000619 0.382378 0.924006
+						0.000000 0.384295 0.923210
+						-0.000000 0.384295 0.923210
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Normal-array" count="16" stride="3">	
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geometries_0-Texture_Projection">
+					<float_array id="geometries_0-Texture_Projection-array" count="120">
+						-7.517007 -6.711740
+						0.810505 -8.697557
+						-7.564104 -6.199357
+						7.046265 10.502906
+						6.590900 9.912437
+						6.726838 1.947993
+						6.387131 10.883616
+						10.796189 2.806869
+						7.703528 10.144045
+						4.243621 2.300614
+						5.929821 11.410541
+						-1.923946 7.583512
+						5.413839 10.676430
+						-0.597888 5.454596
+						7.624757 11.512355
+						8.038822 10.419655
+						12.925105 4.132927
+						14.638270 5.964804
+						8.290832 10.773054
+						15.818937 8.177662
+						-11.368549 -6.094307
+						-11.289763 -7.087228
+						-11.093306 -5.364815
+						-18.778483 -9.068296
+						-10.434773 -7.152290
+						-11.125896 -6.866859
+						-16.891038 -12.774350
+						-10.610389 -7.880256
+						-10.434773 -7.152290
+						-10.257076 -8.132354
+						-15.057032 -14.485237
+						-11.289570 -6.784323
+						-10.603449 -7.081578
+						-10.389876 -6.331709
+						-19.107820 -6.713422
+						-11.150814 -7.022117
+						-10.257852 -6.556361
+						-8.574590 -7.250618
+						-8.478138 -7.990015
+						-2.743425 -13.518480
+						-9.309626 -7.448408
+						-4.746791 -15.027531
+						-10.038015 -6.649507
+						-9.614529 -8.525873
+						-9.091549 -7.679284
+						-10.336089 -8.110841
+						-9.930429 -8.265241
+						-10.300559 -6.377624
+						-12.842709 -15.663151
+						-9.850306 -8.283804
+						-10.257076 -8.132354
+						-10.398970 -16.227820
+						-9.309626 -7.448408
+						-9.850306 -8.283804
+						-8.583370 -6.502770
+						-6.810622 -7.083277
+						-6.886891 -6.574418
+						-10.168713 -6.542952
+						-9.236748 -7.585871
+						-8.503133 -7.382873
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Texture_Projection-array" count="60" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="geometries_0-Vtx">										
+					<input semantic="POSITION" source="#geometries_0-Pos"/>				
+				</vertices>
+				<triangles count="32" material="newleaf-1-SUDCDarkGreen">		
+					<input semantic="VERTEX" source="#geometries_0-Vtx" offset="0"/>
+					<input semantic="NORMAL" source="#geometries_0-Normal" offset="1"/>	
+					<input semantic="TEXCOORD" source="#geometries_0-Texture_Projection" offset="2"/>
+					<p>
+						0	0	0
+						1	1	1
+						2	2	2
+						3	3	3
+						4	3	4
+						5	3	5
+						4	3	4
+						3	3	3
+						6	3	6
+						7	3	7
+						8	3	8
+						3	3	3
+						6	3	6
+						9	3	9
+						4	3	4
+						2	2	10
+						10	3	11
+						11	3	12
+						6	3	6
+						11	3	12
+						12	3	13
+						11	3	12
+						6	3	6
+						2	2	10
+						2	2	10
+						6	3	6
+						13	4	14
+						13	4	14
+						6	3	6
+						3	3	3
+						13	4	14
+						3	3	3
+						8	3	8
+						13	4	14
+						8	3	8
+						14	3	15
+						14	3	15
+						8	3	8
+						15	3	16
+						16	3	17
+						17	3	18
+						14	3	15
+						13	4	14
+						17	3	18
+						18	3	19
+						17	3	18
+						13	4	14
+						14	3	15
+						19	5	20
+						20	6	21
+						13	4	22
+						21	7	23
+						19	5	24
+						22	8	25
+						23	9	26
+						24	9	27
+						19	5	28
+						20	6	29
+						24	9	27
+						25	9	30
+						24	9	27
+						20	6	29
+						19	5	28
+						22	8	31
+						19	5	32
+						13	4	33
+						26	10	34
+						22	8	35
+						13	4	36
+						0	0	37
+						27	11	38
+						28	11	39
+						27	11	38
+						29	12	40
+						30	11	41
+						29	12	40
+						27	11	38
+						0	0	37
+						13	4	42
+						31	13	43
+						29	12	44
+						20	6	45
+						31	13	46
+						13	4	47
+						32	14	48
+						31	13	49
+						20	6	50
+						33	15	51
+						29	12	52
+						31	13	53
+						13	4	54
+						0	0	55
+						2	2	56
+						13	4	57
+						29	12	58
+						0	0	59
+					</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_visual_scenes>
+		<visual_scene id="visual_scenes_0" name="untitled">
+			<node id="UnityExportNode_newleaf">					
+				<translate sid="translation">0.000000 0.000000 0.000000</translate>
+				<rotate sid="rotation_z">0.000000 0.000000 1.000000 0.000000</rotate>
+				<rotate sid="rotation_y">0.000000 1.000000 0.000000 0.000000</rotate>
+				<rotate sid="rotation_x">1.000000 0.000000 0.000000 0.000000</rotate>
+				<scale sid="scale">1.000000 1.000000 1.000000</scale>
+							<node id="mesh0%root%0%">													
+								<translate sid="translation">0.000000 0.000000 0.000000</translate>
+								<rotate>1.000000 0.000000 0.000000 0.000000</rotate>
+								<scale sid="scale">1.0 1.0 1.0</scale>
+								<instance_geometry url="#geometries_0">
+									<bind_material>
+										<technique_common>
+											<instance_material symbol="newleaf-1-SUDCDarkGreen" target="#newleaf-1-SUDCDarkGreen"> 
+
+
+
+
+												<bind semantic="diffuse_TEXCOORD" target="geometries_0-"></bind>
+											</instance_material>	
+										</technique_common>
+									</bind_material>
+								</instance_geometry>
+				</node>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#visual_scenes_0"/>
+	</scene>
+</COLLADA>

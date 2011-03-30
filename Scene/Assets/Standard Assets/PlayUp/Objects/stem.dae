@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<authoring_tool>PlayUp</authoring_tool>							
+		</contributor>
+		<created>2011-03-21T20:18:56Z</created> 										
+		<modified>2011-03-21T20:18:56Z</modified>										
+		<revision>1.4.1</revision>
+		<unit meter="1.0" name="meter"></unit>
+	</asset>
+	<library_images>
+		<image id="SUDCDarkGreen_tga_img" format="bitmap" height="32" width="32" depth="32">
+			<init_from>file:///C:/Users/Dave/Documents/Scene/Assets/Standard Assets/PlayUp/Textures/playup_nomaterial.tga</init_from>
+		</image>
+	</library_images>
+	<library_effects>
+		<effect id="stem-1-SUDCDarkGreen_fx">								
+			<profile_COMMON>
+				<newparam sid="SUDCDarkGreen_tga_surface">
+					<surface type="2D">
+						<init_from>SUDCDarkGreen_tga_img</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="SUDCDarkGreen_tga_sampler">
+					<sampler2D>
+						<source>SUDCDarkGreen_tga_surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="default">
+					<phong>
+						<emission>
+							<color sid="emission">0.000000 0.000000 0.000000 1.000000</color>
+						</emission>
+						<ambient>
+							<color sid="ambient">0.000000 0.000000 0.000000 1.000000</color>
+						</ambient>
+						<diffuse>
+							<color sid="diffuse">0.0 0.4941176436 0.0039215686 1.000000</color>
+						</diffuse>
+						<specular>
+							<color sid="specular">0.000000 0.000000 0.000000 1.000000</color>
+						</specular>
+						<shininess>
+							<float sid="shininess">0.000000</float>
+						</shininess>
+						<reflective>
+							<color sid="reflective">0.000000 0.000000 0.000000 1.000000</color>
+						</reflective>
+						<reflectivity>
+							<float sid="reflectivity">0.000000</float>
+						</reflectivity>
+						<transparent opaque="RGB_ZERO">
+							<color sid="transparent">0.000000 0.000000 0.000000 0.000000</color>
+						</transparent>
+						<transparency>
+							<float sid="transparency">0.000000</float>
+						</transparency>
+						<index_of_refraction>
+							<float sid="index_of_refraction">0.000000</float>
+						</index_of_refraction>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+
+	</library_effects>
+	<library_materials>
+		<material id="stem-1-SUDCDarkGreen">									
+			<instance_effect url="#stem-1-SUDCDarkGreen_fx"></instance_effect>	
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="geometries_0">												
+			<mesh>
+				<source id="geometries_0-Pos">											
+					<float_array id="geometries_0-Pos-array" count="36">				
+						0.182460 1.476736 19.958802
+						0.058297 0.000000 0.012355
+						0.185916 0.045072 0.009124
+						0.059946 1.433543 19.962978
+						0.013109 0.127292 0.003231
+						0.016565 1.555526 19.951184
+						0.139079 1.598718 19.947008
+						0.140728 0.172364 0.000000
+						0.125330 2.784831 29.922857
+						0.045390 2.756733 29.926279
+						0.153635 2.705477 29.932523
+						0.073695 2.677380 29.935945
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Pos-array" count="12" stride="3"> 	
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geometries_0-Normal">									
+					<float_array id="geometries_0-Normal-array" count="36">			
+						0.898221 -0.437340 0.043967
+						-0.430538 -0.900249 0.064723
+						0.902573 -0.429422 0.030973
+						-0.426259 -0.900241 0.088714
+						-0.902572 0.429451 -0.030591
+						-0.906891 0.419568 -0.038866
+						0.434934 0.896445 -0.084964
+						0.430537 0.900276 -0.064341
+						0.430546 0.896325 -0.105978
+						-0.902579 0.427739 -0.048901
+						0.902557 -0.427015 0.055216
+						-0.430525 -0.895566 0.112290
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Normal-array" count="12" stride="3">	
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geometries_0-Texture_Projection">
+					<float_array id="geometries_0-Texture_Projection-array" count="64">
+						0.665978 20.003097
+						0.054938 0.011010
+						0.190282 0.007772
+						0.536074 20.007282
+						-1.331759 19.970042
+						-0.115661 0.004544
+						0.019414 0.013671
+						-1.461226 19.958245
+						-0.054938 0.010997
+						-0.665895 20.000043
+						-0.190281 0.007759
+						-0.535991 20.004229
+						0.115658 0.004511
+						1.331674 19.968935
+						-0.019416 0.013638
+						1.461140 19.957137
+						-0.538095 19.989327
+						-1.053457 30.023851
+						-0.667999 19.985124
+						-0.968723 30.027295
+						1.461999 19.957733
+						2.501227 29.950512
+						1.332533 19.969535
+						2.585477 29.940838
+						1.053857 30.019838
+						0.538191 19.982284
+						0.668095 19.978079
+						0.969123 30.023284
+						-2.501667 29.949531
+						-1.462138 19.955700
+						-1.332673 19.967505
+						-2.585917 29.939857
+					</float_array>
+					<technique_common>
+						<accessor source="#geometries_0-Texture_Projection-array" count="32" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="geometries_0-Vtx">										
+					<input semantic="POSITION" source="#geometries_0-Pos"/>				
+				</vertices>
+				<triangles count="16" material="stem-1-SUDCDarkGreen">		
+					<input semantic="VERTEX" source="#geometries_0-Vtx" offset="0"/>
+					<input semantic="NORMAL" source="#geometries_0-Normal" offset="1"/>	
+					<input semantic="TEXCOORD" source="#geometries_0-Texture_Projection" offset="2"/>
+					<p>
+						0	0	0
+						1	1	1
+						2	2	2
+						1	1	1
+						0	0	0
+						3	3	3
+						3	3	4
+						4	4	5
+						1	1	6
+						4	4	5
+						3	3	4
+						5	5	7
+						4	4	8
+						6	6	9
+						7	7	10
+						6	6	9
+						4	4	8
+						5	5	11
+						7	7	12
+						0	0	13
+						2	2	14
+						0	0	13
+						7	7	12
+						6	6	15
+						5	5	16
+						8	8	17
+						6	6	18
+						8	8	17
+						5	5	16
+						9	9	19
+						6	6	20
+						10	10	21
+						0	0	22
+						10	10	21
+						6	6	20
+						8	8	23
+						10	10	24
+						3	3	25
+						0	0	26
+						3	3	25
+						10	10	24
+						11	11	27
+						11	11	28
+						5	5	29
+						3	3	30
+						5	5	29
+						11	11	28
+						9	9	31
+					</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_visual_scenes>
+		<visual_scene id="visual_scenes_0" name="untitled">
+			<node id="UnityExportNode_stem">					
+				<translate sid="translation">0.000000 0.000000 0.000000</translate>
+				<rotate sid="rotation_z">0.000000 0.000000 1.000000 0.000000</rotate>
+				<rotate sid="rotation_y">0.000000 1.000000 0.000000 0.000000</rotate>
+				<rotate sid="rotation_x">1.000000 0.000000 0.000000 0.000000</rotate>
+				<scale sid="scale">1.000000 1.000000 1.000000</scale>
+							<node id="mesh0%root%0%">													
+								<translate sid="translation">0.000000 0.000000 0.000000</translate>
+								<rotate>1.000000 0.000000 0.000000 0.000000</rotate>
+								<scale sid="scale">1.0 1.0 1.0</scale>
+								<instance_geometry url="#geometries_0">
+									<bind_material>
+										<technique_common>
+											<instance_material symbol="stem-1-SUDCDarkGreen" target="#stem-1-SUDCDarkGreen"> 
+
+
+
+
+												<bind semantic="diffuse_TEXCOORD" target="geometries_0-"></bind>
+											</instance_material>	
+										</technique_common>
+									</bind_material>
+								</instance_geometry>
+				</node>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#visual_scenes_0"/>
+	</scene>
+</COLLADA>
